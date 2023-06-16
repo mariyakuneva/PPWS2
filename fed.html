@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+    
+	<title>FED</title>
+</head>
+    <body id="fed">
+        <header id="top">
+            <button class="back" onclick="history.back()">&#8592;</button>
+            <nav>
+                <a href="index.html"><img class="logo" src="img/mk.png"></a>
+            </nav>
+        </header>
+        <main>
+            <h1>Front End Development</h1>
+            <section class="folders">
+                <img src="img/hermes.png" onclick="toggleModal(modalH)">
+                <img src="img/wine.png" onclick="toggleModal(modalW)">
+                <img src="img/layout.png" onclick="toggleModal(modalL)">
+                <img src="img/Portfolio.png" onclick="toggleModal(modalP)">
+                <img src="img/level0.png" onclick="toggleModal(modalL0)">
+                <img src="img/level1.png" onclick="toggleModal(modalL1)">
+                <img src="img/guess.png" onclick="toggleModal(modalG)">
+                <img src="img/animations.png" onclick="toggleModal(modalA)">
+                <img src="img/currency.png" onclick="toggleModal(modalCapi)">
+                <img src="img/weather.png" onclick="toggleModal(modalWapi)">
+                <img src="img/memory.png" onclick="toggleModal(modalMemo)">
+
+                <!--  MODAL -->
+			<div class="modal" id="Hermes">
+				<div class="modal-content">
+					<!--close button that close the modal by removing the show-modal class-->
+					<span class="close-button" onclick="toggleModal(modalH)">&times;</span>
+                    <h3>The first webpage we had to recreate was hermes.nl. I didn't learn any new things I already knew how to properly recreate it. This is the end result:<br><br>
+                        <a target="_blank" href="hermes/index.html">&#x2192;Hermes web page</a></h3>  
+				</div>
+			</div>
+
+             <!--  MODAL -->
+			<div class="modal" id="Wine">
+				<div class="modal-content">
+					<!--close button that close the modal by removing the show-modal class-->
+					<span class="close-button" onclick="toggleModal(modalW)">&times;</span>
+                    <h3>We had to choose another webpage to recreate. I chose this wine website https://drinkavaline.com/. It was more challenging, because I used JavaScript for the navbar. I was interested in how to do the changing of the style of the navbar. I did some research and I actually managed to do it. This is the final result:<br><br>
+                         <a target="_blank" href="wine/index.html">&#x2192;Wine web page</a></h3> 
+				</div>
+			</div>
+
+            <!--  MODAL -->
+			<div class="modal" id="Layout">
+				<div class="modal-content">
+					<!--close button that close the modal by removing the show-modal class-->
+					<span class="close-button" onclick="toggleModal(modalL)">&times;</span>
+                    <h3>We had to create a layout using grid or flexbox. I already had some experience with flexbox, that's why this time I tried working with grid more. I wanted to get more comfortable with using grid. I am pretty satisfied with the final result. I also added transform properties to the pictures to make it more interesting.<br><br>
+                        <a target="_blank" href="layout/index.html">&#x2192;Layout web page</a></h3>
+				</div>
+			</div>
+
+            <!--  MODAL -->
+			<div class="modal" id="Prototype">
+				<div class="modal-content">
+					<!--close button that close the modal by removing the show-modal class-->
+					<span class="close-button" onclick="toggleModal(modalP)">&times;</span>
+                    <h3>I also created prototype for my portfolio, which ended a little bit different. But after I did research based on more interactive portfolio websites I decided that my first idea was too simple. I kept it simple with the first submition of it, but I had the idea to have different designs on each page, which match the module.<br><br>
+                        <a target="_blank" href="img/pt.PNG">&#x2192;Prototype</a></h3>
+				</div>
+			</div>
+
+            <!--  MODAL -->
+			<div class="modal" id="l0">
+				<div class="modal-content">
+					<!--close button that close the modal by removing the show-modal class-->
+					<span class="close-button" onclick="toggleModal(modalL0)">&times;</span>
+                    <h3>I started coding the easiest challenges first, because I wanted to see if there are any similarities between JavScript and the programming languages I've been studing. And after I understood the logic I started with the basic (level 1) ones.
+                        <a target="_blank" href="https://github.com/mariyakuneva03/PPWS2/tree/main/Level%200%20Challenges">&#x2192;Level 0 Challenges Code Folder (GitHub)</a><br>
+                        <a target="_blank" href="Level 0 Challenges/factorial.html">&#x2192;Factorial</a> (using console.log; prints the factorial of every number between 1 and 18 )<br>
+                        <a target="_blank" href="Level 0 Challenges/longestWord.html">&#x2192;longestWord</a>(prints the length of the longest word in a sentence)<br>
+                        <a target="_blank" href="Level 0 Challenges/reverse.html">&#x2192;Reverse sentence</a>(using console.log; prints the reversed of a sentence)<br>
+                        <a target="_blank" href="Level 0 Challenges/salad.html">&#x2192;Salad</a>(executes a a basic functions with parameters and print them in a string by placeholders)<br>
+                        
+                    </h3>
+				</div>
+			</div>
+
+            <!--  MODAL -->
+			<div class="modal" id="l1">
+				<div class="modal-content">
+					<!--close button that close the modal by removing the show-modal class-->
+					<span class="close-button" onclick="toggleModal(modalL1)">&times;</span>
+                    <h3>For these challenges I did some research, because they were a bit confusing at first. I was watching YouTube videos and looking at examples in websites. <br>
+                        <a target="_blank" href="https://github.com/mariyakuneva03/PPWS2/tree/main/Level%201%20Challenges">&#x2192;Level 1 Challenges Code Folder (GitHub)</a><br>
+                        <a target="_blank" href="Level 1 Challenges/clock/clock.html">&#x2192;Clock</a> (For the clock I used div for every number on the clock and translate:rotate(); property on every number so I can position them in a circle around the middle of the clock. The 3 hands of the clock are updating based on the real time. For that I used JavaScript function that gets the seconds, minutes and the hours from the current time and rotates the hands based on the values it gets from the time.)<br>
+                        <a target="_blank" href="Level 1 Challenges/accordion/index.html">&#x2192;Accordion</a>(For the accordion I used function, which on click changes the class of the parrent div of the heading that you click on (from "accordionItemHeading" to either "accordionItemHeading open" or "accordionItemHeading close") so the content shows or hides.)<br>
+                        <a target="_blank" href="Level 1 Challenges/pie chart/index.html">&#x2192;Pie Chart</a>(For this challenge I first looked at the and after that I did additional research and found very useful information in <a target="_blank" href="https://www.section.io/engineering-education/javascript-canvas-piechart/">Section.io</a>. I search for some explanation of the used function in <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D ">Developer Mozilla</a>. After my little research I went back in the JavaScript code and commented the functions with the information I learnt. After I did the piechart I did a basic legend with HTML and CSS.)
+                    </h3>
+				</div>
+			</div>
+
+            <!--  MODAL -->
+			<div class="modal" id="g">
+				<div class="modal-content">
+					<!--close button that close the modal by removing the show-modal class-->
+					<span class="close-button" onclick="toggleModal(modalG)">&times;</span>
+                    <h3>I did some research on example of codes for guessing a number. I kept it simple with only the prompts showing, because I wanted to focus on a more efficient way to code it insted of the design of the game. I coded it that it starts with a variable "playerTurn=1" and when the game starts it adds 1 to it and checks if the variable is even it's player 1 turn and if it's odd it's player 2 turn. So I don't need 2 inputs from 2 different players, but they have different variables for their remaining tries. When the game ends you can inspect and see the details you enter for players appear and the randomly generated number. This is the finished version.<br>
+                        <a target="_blank" href="guess the number/index.html">&#x2192;Guess the number</a>   
+                    </h3>
+				</div>
+			</div>
+
+            <!--  MODAL -->
+            <div class="modal" id="an">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalA)">&times;</span>
+                    <h3>For the animation assignment, my inspiration was the DVD logo bumping into the walls of the screen and changing colors. I managed to make something similar
+                        <a target="_blank" href="animations/index.html">&#x2192;Animations</a>
+                    </h3>
+                </div>
+            </div>
+
+            <!--  MODAL -->
+            <div class="modal" id="capi">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalCapi)">&times;</span>
+                    <h3>In class we had to code Currency App with API which takes the current rates of USD and EUR and converts amount of USD to EUR<br>
+                        <a target="_blank" href="Currency Fetch API/index.html">&#x2192;Currency Fetch API</a>
+                    </h3>
+                </div>
+            </div>
+
+            <!--  MODAL -->
+            <div class="modal" id="wapi">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalWapi)">&times;</span>
+                    <h3>This is my Weather App with API. I used <a target="_blank" href="https://api.openweathermap.org">https://api.openweathermap.org</a> which is an open API, but you had to create account and wait 2-3 hours for the key to activate. For the code, in the search bar you enter a city name and based on that it checks the api json data and outputs current temperature, humidity and wind speed. <br>
+                        <a target="_blank" href="Weather API/index.html">&#x2192;Weather Fetch API</a>
+                    </h3>
+                </div>
+            </div>
+
+            <!--  MODAL -->
+            <div class="modal" id="memo">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalMemo)">&times;</span>
+                    <h3>Since the Memory game needs a good design, on this one I really focused on the design. I made it so when you press starts, the game appears. On top right corner is the timer, counting down from 60s. When you flip card when 2 of them are clicked the boared gets locked so you cannot bug the game. When two cards are matched they stay revealed. When you match all the cards you can either exit or restart the game. Every time you play the colours switch randomly.  <br>
+                        <a target="_blank" href="memory game/index.html">&#x2192;Memory game</a>
+                    </h3>
+                </div>
+            </div>
+            </section>
+            
+        </main>
+        
+        <footer id="footer" > 
+            <img class="logo" src="img/mk.png"><br><br>
+            <div id="links" >
+                <a href="ucd.html">UCD</a>
+                <a href="mp.html">Media Production</a>
+                <a href="fed.html">Front End Development</a>
+                <a href="gp.html">Group Project</a>
+            </div>
+            <div id="flex" >
+                <span>© Maria Kuneva</span>
+                <a href="#top">Go to top &#8593;</a>
+            </div>
+        </footer> 
+        <script src="an.js" type="text/javascript"></script>
+        
+    </body>
+</html>

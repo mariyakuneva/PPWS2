@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+    
+	<title>Group Project</title>
+</head>
+    <body>
+        <header id="top">
+            <button class="back" onclick="history.back()">&#8592;</button>
+            <nav>
+                <a href="index.html"><img class="logo" src="img/mk.png"></a>
+            </nav>
+        </header>
+        <main>
+            <h1>Group Project</h1>
+            <section class="links">
+                <img src="img/ag.png" onclick="toggleModal(modalA)">
+                <img src="img/pp.png" onclick="toggleModal(modalPP)">
+                <div class="flex">
+                    <img src="img/Artist Persona.png"  onclick="toggleModal(modalAP)">
+                    <img src="img/site map.png" onclick="toggleModal(modalSM)">
+                </div>
+                <img src="img/webLogo.png" onclick="toggleModal(modalWL)">
+                 <div class="flex">
+                    <img src="img/prot1.png" onclick="toggleModal(modalPr1)">
+                    <img src="img/prot2.png" onclick="toggleModal(modalPr2)">
+                </div>
+                <div class="flex">
+                    <img src="img/code.jpg" onclick="toggleModal(modalCode)">
+                    <img src="img/pr.png" onclick="toggleModal(modalPR)">
+                </div>
+                
+
+            </section>
+
+             <!--  MODAL -->
+             <div class="modal" id="ag">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalA)">&times;</span>
+                    <h3>The first thing we made as a group was to come up with agreements. We settled on some agreements, I wrote them all down and after that created the Agreements document itself. This is the final deliverable:<br>
+                    <a href="img/ag.png" target="blank_">&#x2192;Agreements document</a></h3>
+                        
+                </div>
+            </div>
+
+            <!--  MODAL -->
+            <div class="modal" id="pp">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalPP)">&times;</span>
+                    <h3>After the Agreemnets document we started creating the Project Plan. I did the automatic table of contents and the risk assessments. Me and Hanga came up with the research questions , we wrote the research methods (I did the first 4 - Competitive Analysis method, Benchmark creation method, Expert Interview, Design Pattern Search) and connect them with the questions. This is the final deliverable:<br>
+                    <a href="files/Project Plan.pdf" target="blank_">&#x2192;Project Plan</a></h3>
+                        
+                </div>
+            </div>
+
+            <!--  MODAL -->
+            <div class="modal" id="ap">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalAP)">&times;</span>
+                    <h3>After we looked at the interviews with Eleni and her answers to the questions we asked we created our Artist Persona. We based it on Eleni's artistic visions are thoughts, because she mentioned that her main target group is researchers (people interested in her specie and her activities). I worked on the design of the persona - the colors, layout. This is the final deliverable:<br>
+                    <a href="img/Artist Persona.png" target="blank_">&#x2192;Artist Persona</a></h3>
+                        
+                </div>
+            </div>
+
+            <!--  MODAL -->
+            <div class="modal" id="wl">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalWL)">&times;</span>
+                    <h3>After researching Eleni's specie we found that "bradipus" means sloth. From there we started brainstorming and we came up with our idea of the logo - sloth (representing slowing down) and two people hugging with a chat bubble between them (representing connectivity). After the logo was done we printed it and we separated in pairs and did some user testing. We asked people what they see in the logo iterations. Here are my notes from my research: <br><br>
+                        <a href="img/notes.png" target="blank_">&#x2192;My notes</a> - I was showing people the logo without the eyes (second 2 on the photo) of the sloth in both colors. From my part of the research most of the people didn't really recognised the animal and saw only objects. There were a few people that saw panda and only one recognised the sloth right away. This way we eliminated those iterations of the logo and focused on the other two(first 2 on the photo). We looked at everyone's notes from their research and we decided on which logo should we use and what should we change.<br>
+                    <a href="files/logoTest3.pdf" target="blank_">&#x2192;Logo</a></h3>
+                        
+                </div>
+            </div>
+
+            <!--  MODAL -->
+            <div class="modal" id="sm">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalSM)">&times;</span>
+                    <h3>After we were ready with our research we wanted to start prototyping, but we didn't have any idea where to start. Then we decided to create a site map that will be our template for our prototypes. We opened it on the big screen and did it all together. We listened to everyone's ideas and managed to create it pretty fast. This is the final deliverable:<br>
+                    <a href="img/site map.png" target="blank_">&#x2192;Site map</a></h3>
+                        
+                </div>
+            </div>
+
+            <!--  MODAL -->
+            <div class="modal" id="pr1">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalPr1)">&times;</span>
+                    <h3>After our research we decided every member of the group to create their version of the design of the prototype (Main page) for the website based on the research, the interviews with Eleni and her preferences. This is my idea of the prototype. Since she wanted something playful I chose handwritten font (which after an interview with her she didn't like and wanted to keep it more "professional" with less playful font) and for background I draw these lines which represents the connectivity and also add playfulness (the client loved them). I designed the pictures with different shapes, because this was one of her preference and put a little bio section so the users can be introduced to the artist and contact her. <br>
+                    <a href="https://www.figma.com/proto/vc64aPgopP5CpwF03fBq4a/Untitled?type=design&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=0%3A3&node-id=0-3" target="blank_">&#x2192;My prototype</a></h3>
+                        
+                </div>
+            </div>
+
+            <!--  MODAL -->
+            <div class="modal" id="pr2">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalPr2)">&times;</span>
+                    <h3>After we all created our prototypes and had an interview with our client we combined some of the ideas, created a new logo (she didn't like the old one :( ) and designed our current prototype. From my prototype we used the layout, the hamburger menu, the footer, the background with the lines and the bio section with the contact link. On the current prototype I worked on the contact page and the navigation.<br>
+                    <a href="https://www.figma.com/proto/NKFTIDbpiul7iVSGH74Gj4/Untitled?type=design&scaling=scale-down-width&page-id=0%3A1&node-id=0-28&starting-point-node-id=0%3A801" target="blank_">&#x2192;Current prototype</a></h3>  
+                </div>
+            </div>
+
+            <!--  MODAL -->
+            <div class="modal" id="code">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalCode)">&times;</span>
+                    <h3>After me, Martina and Hanga finished the prototype, the boys started user-testing. They had feedback for us and we continued to make changes until we satisfied most of the needs of the users. After that me, Hanga and Martina started coding. After we were pretty much done we had another interview with our client so she can test the website. She had some small suggestions for changes that we took for consideration and added to the website. I coded Ergotksio page (with slider for the pictures), which later were used as a template for the other project pages. I worked mostly on the JavaScript of the website (the slider, the navigation). I aslo was assigned as "Gitlab errors solver & Tech Support" so I had to deal with all the merge conflicts and GitLab errors that appeared on the way :) .   <br>
+                    <a href="http://i508688.hera.fhict.nl/eleni/index.html" target="blank_">&#x2192;Finished website</a><br>
+                    <a href="http://i508688.hera.fhict.nl/eleni/ergotaksio.html" target="blank_">&#x2192;Ergotaksio page</a><br>
+                    <a href="https://git.fhict.nl/I508537/team-green" target="blank_">&#x2192;GitLab Repository</a>
+                </h3>  
+                </div>
+            </div>
+
+            <!--  MODAL -->
+            <div class="modal" id="pr">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalPR)">&times;</span>
+                    <h3>At the end we started working on the project report so we can document everything we did about this group project. Me and Hanga wrote the "Coding/Implementing" part since we coded the website. <br>
+                    <a href="files/Project report.pdf" target="blank_">&#x2192;Project Report</a></h3>  
+                </div>
+            </div>
+        </main>
+     
+        <footer id="footer" > 
+            <img class="logo" src="img/mk.png"><br><br>
+            <div id="links" >
+                <a href="ucd.html">UCD</a>
+                <a href="mp.html">Media Production</a>
+                <a href="fed.html">Front End Development</a>
+                <a href="gp.html">Group Project</a>
+            </div>
+            <div id="flex" >
+                <span>© Maria Kuneva</span>
+                <a href="#top">Go to top &#8593;</a>
+            </div>
+            
+        </footer> 
+        <script src="an.js" type="text/javascript"></script>
+    </body>
+</html>
