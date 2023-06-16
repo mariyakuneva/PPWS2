@@ -1,0 +1,17 @@
+div.chart{ 
+	width: 100%;
+  	height: 100vh;
+	display: flex;
+  	justify-content: center;
+ 	align-items: center;
+ }
+
+ /* basic positioning */
+.legend { list-style: none; }
+.legend li{margin-bottom: 1em;}
+.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+/* your colors */
+.legend .neth { background-color: #fcca46; }
+.legend .bul { background-color: #a1c181; }
+.legend .ar { background-color: #fe7f2d; }
+.legend .rom { background-color: #619b8a; }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		function FirstReverse(str){
+		if (str === "")
+    	return "";
+ 		 else
+    	return FirstReverse(str.substr(1)) + str.charAt(0);
+		}
+		console.log(FirstReverse("Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."));
+
+	</script>
+</body>
+</html>
